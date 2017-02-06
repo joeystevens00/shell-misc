@@ -9,7 +9,7 @@ $REMOTE_USER - username to ssh into
 $REMOTE_PASSWORD - password of user    
 $REMOTE_WWW_DIR - location that the ip file will reside in   
 
-Add pseudodynamicdns.sh as a cronjob
+Add pseudodynamicdns.sh as a cronjob   
 ` sudo crontab -e `    
 ` * * * * * pseudodynamicdns.sh `    
 
