@@ -1,4 +1,8 @@
 #!/bin/bash
+# Checks that an SSH tunnel that is bound to a local port (effectively making a SOCKS proxy) is still up
+# If it finds the tunnel is dead it will kill the ssh processes and restart the tunnel
+# Best useds as a cronjob ran every few minutes  (5 seems OK)
+# */5 * * * * /root/bin/checkStatusOfSshTunnelBoundSocksProxy.sh > /root/checkStatus.log 2> /root/checkStatuserror.log
 sshproxybindhost="localhost"
 sshproxybindport="9999"
 sshproxy=""
